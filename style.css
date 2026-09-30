@@ -1,0 +1,1942 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Display",
+        "SF Pro Text",
+        Arial,
+        sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 44px;
+
+    width: 100%;
+
+    background: #1d1d1f;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 22px;
+
+    gap: 30px;
+
+    position: relative;
+
+    z-index: 100;
+}
+
+
+.apple-logo {
+    color: #f5f5f7;
+
+    font-size: 20px;
+
+    width: 25px;
+
+    line-height: 1;
+}
+
+
+.nav-links {
+    flex: 1;
+
+    max-width: 850px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.nav-links a {
+    color: #d2d2d2;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+
+    transition: color 0.2s ease;
+}
+
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+
+.nav-icons {
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 24px;
+
+    color: #eeeeee;
+
+    font-size: 20px;
+}
+
+
+
+/* =========================
+   COMMON HERO
+========================= */
+
+.hero {
+    width: 100%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    text-align: center;
+}
+
+
+
+/* =========================
+   iPHONE 18 PRO
+========================= */
+
+.hero-pro {
+    height: calc(100vh - 44px);
+
+    min-height: 600px;
+
+    background: #000000;
+
+    color: #ffffff;
+}
+
+
+.hero-pro .hero-content {
+    position: relative;
+
+    z-index: 5;
+
+    padding-top: 55px;
+}
+
+
+.hero-pro h1 {
+    font-size: 46px;
+
+    line-height: 1.1;
+
+    font-weight: 700;
+
+    letter-spacing: -2px;
+}
+
+
+.hero-pro p {
+    font-size: 25px;
+
+    margin-top: 5px;
+}
+
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 16px;
+
+    margin-top: 18px;
+}
+
+
+.btn {
+    display: inline-block;
+
+    padding: 11px 23px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: all 0.25s ease;
+}
+
+
+/* Blue button */
+
+.learn {
+    background: #0077ed;
+
+    color: #ffffff;
+}
+
+
+.learn:hover {
+    background: #1685f5;
+
+    transform: scale(1.03);
+}
+
+
+/* Outline button */
+
+.buy,
+.pricing {
+    color: #2997ff;
+
+    border: 1px solid #2997ff;
+
+    background: transparent;
+}
+
+
+.buy:hover,
+.pricing:hover {
+    background: #2997ff;
+
+    color: #ffffff;
+}
+
+
+
+/* =========================
+   18 PRO IMAGE
+========================= */
+
+.pro-image {
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 55px;
+
+    transform: translateX(-50%);
+
+    width: min(1000px, 95vw);
+
+    z-index: 2;
+}
+
+
+.pro-image img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    object-fit: contain;
+
+    user-select: none;
+
+    pointer-events: none;
+}
+
+
+
+/* =========================
+   iPHONE DUO SECTION
+========================= */
+
+.hero-duo {
+    height: 720px;
+
+    background: #f5f5f7;
+
+    color: #1d1d1f;
+
+    border-top: 12px solid #ffffff;
+}
+
+
+.duo-content {
+    position: relative;
+
+    z-index: 5;
+
+    padding-top: 38px;
+}
+
+
+.duo-content h2 {
+    font-size: 46px;
+
+    line-height: 1.1;
+
+    font-weight: 700;
+
+    letter-spacing: -2px;
+}
+
+
+.duo-subtitle {
+    font-size: 25px;
+
+    margin-top: 5px;
+}
+
+
+.duo-info {
+    color: #777777;
+
+    font-size: 17px;
+
+    line-height: 1.4;
+
+    margin-top: 12px;
+}
+
+
+
+/* =========================
+   iPHONE DUO IMAGE
+========================= */
+
+.duo-image {
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    width: 1100px;
+
+    z-index: 2;
+}
+
+.duo-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    user-select: none;
+    pointer-events: none;
+}
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 1200px) {
+
+    .pro-image {
+        width: 1000px;
+
+        bottom: 55px;
+    }
+
+    .duo-image {
+        width: 760px;
+    }
+}
+
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+
+    .nav-icons {
+        margin-left: 0;
+    }
+
+
+    .hero-pro h1,
+    .duo-content h2 {
+        font-size: 40px;
+    }
+
+
+    .hero-pro p,
+    .duo-subtitle {
+        font-size: 23px;
+    }
+
+
+    .pro-image {
+        width: 900px;
+
+        max-width: none;
+
+        bottom: 70px;
+    }
+
+
+    .duo-image {
+        width: 700px;
+
+        max-width: none;
+    }
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: 48px;
+
+        padding: 0 18px;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .hero-pro {
+        height: 650px;
+
+        min-height: 0;
+    }
+
+
+    .hero-pro .hero-content {
+        padding-top: 42px;
+    }
+
+
+    .hero-pro h1,
+    .duo-content h2 {
+        font-size: 34px;
+
+        letter-spacing: -1.5px;
+    }
+
+
+    .hero-pro p,
+    .duo-subtitle {
+        font-size: 20px;
+    }
+
+
+    .buttons {
+        gap: 12px;
+
+        margin-top: 16px;
+    }
+
+
+    .btn {
+        font-size: 14px;
+
+        padding: 10px 19px;
+    }
+
+
+    .pro-image {
+        width: 700px;
+
+        max-width: none;
+
+        bottom: 70px;
+    }
+
+
+    /* Duo */
+
+    .hero-duo {
+        height: 620px;
+    }
+
+
+    .duo-content {
+        padding-top: 35px;
+    }
+
+
+    .duo-info {
+        font-size: 14px;
+
+        padding: 0 15px;
+    }
+
+
+    .duo-image {
+        width: 650px;
+
+        max-width: none;
+
+        bottom: 0;
+    }
+}
+
+
+
+/* =========================
+   APPLE WATCH SERIES 12
+========================= */
+
+.watch-section {
+    width: 100%;
+
+    height: 550px;
+
+    background: #000;
+
+    color: #fff;
+
+    position: relative;
+
+    overflow: hidden;
+
+    text-align: center;
+}
+
+
+/* =========================
+   WATCH CONTENT
+========================= */
+
+.watch-content {
+    position: relative;
+
+    z-index: 5;
+
+    padding-top: 55px;
+}
+
+
+.watch-content h2 {
+    font-size: 40px;
+
+    font-weight: 600;
+
+    letter-spacing: -1.5px;
+
+    line-height: 1.1;
+}
+
+
+.watch-content h2 span {
+    font-weight: 400;
+}
+
+
+.watch-content p {
+    font-size: 24px;
+
+    margin-top: 320px;
+
+    letter-spacing: -0.5px;
+}
+
+
+.watch-content sup {
+    font-size: 11px;
+
+    position: relative;
+
+    top: -7px;
+}
+
+
+/* =========================
+   WATCH IMAGE
+========================= */
+
+.watch-image {
+    position: absolute;
+
+    left: 50%;
+
+    top: 25px;
+
+    transform: translateX(-50%);
+
+    width: 760px;
+
+    z-index: 2;
+}
+
+
+.watch-image img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    margin: 0;
+
+    padding: 0;
+
+    user-select: none;
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   WATCH BUTTONS
+========================= */
+
+.watch-content .buttons {
+    margin-top: 18px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 16px;
+}
+
+
+.watch-content .btn {
+    display: inline-block;
+
+    padding: 11px 23px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: 0.25s ease;
+}
+
+
+.watch-content .learn {
+    background: #0077ed;
+
+    color: #fff;
+}
+
+
+.watch-content .learn:hover {
+    background: #1685f5;
+
+    transform: scale(1.03);
+}
+
+
+.watch-content .buy {
+    color: #2997ff;
+
+    border: 1px solid #2997ff;
+
+    background: transparent;
+}
+
+
+.watch-content .buy:hover {
+    background: #2997ff;
+
+    color: #fff;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .watch-section {
+        height: 680px;
+    }
+
+    .watch-image {
+        width: 700px;
+
+        top: 35px;
+    }
+
+    .watch-content h2 {
+        font-size: 36px;
+    }
+
+    .watch-content p {
+        font-size: 21px;
+
+        margin-top: 300px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .watch-section {
+        height: 600px;
+    }
+
+    .watch-content {
+        padding-top: 40px;
+    }
+
+    .watch-content h2 {
+        font-size: 30px;
+    }
+
+    .watch-image {
+        width: 620px;
+
+        max-width: none;
+
+        top: 30px;
+    }
+
+    .watch-content p {
+        font-size: 18px;
+
+        margin-top: 265px;
+
+        padding: 0 20px;
+    }
+
+    .watch-content .btn {
+        font-size: 14px;
+
+        padding: 10px 19px;
+    }
+}
+
+
+
+/* =========================
+   PROMO GRID
+========================= */
+
+.promo-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    padding: 12px 12px;
+
+    background: #ffffff;
+}
+
+
+/* =========================
+   COMMON CARD
+========================= */
+
+.promo-card {
+    height: 500px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    text-align: center;
+}
+
+
+/* =========================
+   WATCH ULTRA
+========================= */
+
+.watch-ultra {
+    background: #000000;
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   MAC MINI
+========================= */
+
+.mac-mini {
+    background: #f5f5f7;
+
+    color: #1d1d1f;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.promo-content {
+    position: relative;
+
+    z-index: 5;
+
+    padding-top: 48px;
+}
+
+
+.promo-content h2 {
+    margin: 0;
+
+    font-size: 34px;
+
+    line-height: 1.1;
+
+    font-weight: 600;
+
+    letter-spacing: -1.5px;
+}
+
+
+.watch-ultra .promo-content h2 span {
+    font-weight: 400;
+}
+
+
+.promo-content p {
+    margin-top: 6px;
+
+    font-size: 20px;
+
+    line-height: 1.3;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.promo-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-top: 16px;
+}
+
+
+.promo-btn {
+    text-decoration: none;
+
+    font-size: 14px;
+
+    padding: 9px 19px;
+
+    border-radius: 25px;
+
+    transition: 0.25s ease;
+}
+
+
+/* Blue button */
+
+.promo-btn.learn {
+    background: #0077ed;
+
+    color: #ffffff;
+}
+
+
+.promo-btn.learn:hover {
+    background: #1685f5;
+
+    transform: scale(1.03);
+}
+
+
+/* Outline button */
+
+.promo-btn.buy {
+    color: #2997ff;
+
+    border: 1px solid #2997ff;
+
+    background: transparent;
+}
+
+
+.promo-btn.buy:hover {
+    background: #2997ff;
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   IMAGES
+========================= */
+
+.promo-image {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 2;
+}
+
+
+/* Watch image */
+
+.watch-ultra .promo-image {
+    width: 100%;
+
+    bottom: 0;
+}
+
+
+.watch-ultra .promo-image img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* Mac image */
+
+.mac-mini .promo-image {
+    width: 100%;
+
+    bottom: 0;
+}
+
+
+.mac-mini .promo-image img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+    .promo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .promo-card {
+        height: 650px;
+    }
+
+    .promo-content h2 {
+        font-size: 32px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    .promo-grid {
+        padding: 0 8px;
+
+        gap: 8px;
+    }
+
+    .promo-card {
+        height: 580px;
+    }
+
+    .promo-content {
+        padding-top: 38px;
+    }
+
+    .promo-content h2 {
+        font-size: 29px;
+    }
+
+    .promo-content p {
+        font-size: 18px;
+    }
+
+    .promo-image {
+        width: 100%;
+    }
+
+    .promo-btn {
+        font-size: 13px;
+
+        padding: 9px 17px;
+    }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+}
+
+
+/* MAIN */
+
+.products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 6px 12px;
+    padding-bottom: 12px;
+}
+
+
+/* CARD */
+
+.card {
+    height: 490px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+/* BACKGROUND */
+
+.macbook {
+    background: #eaf8fc;
+}
+
+.ipad {
+    background: #dff4fa;
+}
+
+
+/* TEXT */
+
+.content {
+    padding-top: 45px;
+    position: relative;
+    z-index: 5;
+}
+
+.content h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #1d1d1f;
+    line-height: 1.1;
+}
+
+.content h1 span {
+    color: #2189d0;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.content p {
+    margin-top: 7px;
+    font-size: 18px;
+    color: #1d1d1f;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    margin-top: 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 9px 17px;
+    border-radius: 25px;
+}
+
+
+/* LEARN MORE */
+
+.learn {
+    background: #087fe5;
+    color: white;
+    border: 1px solid #087fe5;
+}
+
+
+/* BUY */
+
+.buy {
+    background: transparent;
+    color: #087fe5;
+    border: 1px solid #087fe5;
+}
+
+
+/* PRODUCT IMAGE AREA */
+
+.image-box {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+/* PRODUCT IMAGES */
+
+.image-box img {
+   
+    object-fit: contain;
+    object-position: center bottom;
+}
+
+
+/* MACBOOK */
+
+.macbook .image-box img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* IPAD */
+
+.ipad .image-box img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        height: 500px;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+}
+
+
+/* =========================
+   MAIN SECTION
+========================= */
+
+.promo-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 2px 5px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.promo-card {
+    height: 500px;
+    background: #f5f5f7;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.content {
+    padding-top: 45px;
+    position: relative;
+    z-index: 2;
+}
+
+.content h1 {
+    font-size: 29px;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 7px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.3;
+    color: #1d1d1f;
+    margin-bottom: 14px;
+}
+
+.content sup {
+    font-size: 9px;
+    position: relative;
+    top: -5px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #087fe5;
+    color: white;
+
+    font-size: 14px;
+
+    padding: 10px 18px;
+
+    border-radius: 25px;
+
+    border: 1px solid #087fe5;
+}
+
+.btn:hover {
+    background: #006edc;
+}
+
+
+/* OUTLINE BUTTON */
+
+.btn.outline {
+    background: transparent;
+    color: #087fe5;
+}
+
+.btn.outline:hover {
+    background: #087fe5;
+    color: white;
+}
+
+
+/* =========================
+   PRODUCT IMAGE
+========================= */
+
+.product {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center bottom;
+
+    display: block;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .promo-section {
+        grid-template-columns: 1fr;
+    }
+
+    .promo-card {
+        height: 490px;
+    }
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f7;
+}
+
+
+/* =========================
+   MAIN SECTION
+========================= */
+
+.entertainment {
+    width: 100%;
+    padding-top: 35px;
+    overflow: hidden;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.entertainment h1 {
+    text-align: center;
+
+    font-size: 32px;
+    font-weight: 600;
+
+    color: #1d1d1f;
+
+    margin-bottom: 17px;
+}
+
+
+/* =========================
+   SLIDER
+========================= */
+
+.slider {
+    display: flex;
+
+    gap: 12px;
+
+    width: max-content;
+
+    position: relative;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.show-card {
+    width: 688px;
+    height: 368px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+
+    background: #ddd;
+}
+
+
+/* =========================
+   IMAGES
+========================= */
+
+.show-card img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   CENTER CARD
+========================= */
+
+.center-card {
+    width: 688px;
+    height: 368px;
+}
+
+
+/* =========================
+   SIDE CARDS
+========================= */
+
+.side-card {
+    width: 688px;
+    height: 368px;
+}
+
+
+/* =========================
+   BOTTOM CONTENT
+========================= */
+
+.show-info {
+    position: absolute;
+
+    left: 43px;
+    right: 43px;
+    bottom: 17px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* BUTTON / TEXT */
+
+.show-info span,
+.show-info button {
+    font-size: 14px;
+}
+
+
+/* PILL */
+
+.show-info span {
+    background: white;
+
+    color: #222;
+
+    padding: 10px 17px;
+
+    border-radius: 25px;
+}
+
+
+/* BUTTON */
+
+.show-info button {
+    border: none;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    color: #222;
+
+    padding: 10px 18px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .entertainment h1 {
+        font-size: 28px;
+    }
+
+    .show-card {
+        width: 90vw;
+        height: calc(90vw * 0.535);
+    }
+
+    .center-card {
+        width: 90vw;
+    }
+
+    .side-card {
+        width: 90vw;
+    }
+
+    .show-info {
+        left: 20px;
+        right: 20px;
+        bottom: 12px;
+    }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f7;
+}
+
+
+/* MAIN SECTION */
+
+.services {
+    width: 100%;
+    padding: 14px 9px 18px;
+    overflow: hidden;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    gap: 13px;
+    width: 100%;
+}
+
+
+/* CARD */
+
+.service-card {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    height: 255px;
+    overflow: hidden;
+    background: #ddd;
+}
+
+
+/* IMAGE */
+
+.service-card > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* CONTENT */
+
+.card-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 13px;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 0 10px;
+
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.card-content h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.card-content p {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+
+/* BUTTON */
+
+.card-content button {
+    border: none;
+
+    background: rgba(255, 255, 255, 0.95);
+    color: #222;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+/* NAVIGATION */
+
+.navigation {
+    height: 42px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* DOTS */
+
+.dots {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dots span {
+    width: 7px;
+    height: 7px;
+
+    background: #8a8a8a;
+
+    border-radius: 50%;
+}
+
+
+/* ACTIVE DOT */
+
+.dots .active {
+    width: 28px;
+    height: 7px;
+
+    border-radius: 10px;
+
+    background: #777;
+}
+
+
+/* RIGHT ARROW */
+
+.next {
+    position: absolute;
+    right: 3px;
+
+    width: 24px;
+    height: 24px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #e1e1e1;
+
+    color: #777;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .cards {
+        overflow-x: auto;
+    }
+
+    .service-card {
+        min-width: 180px;
+    }
+
+    .cards::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+/* =========================
+   DISCLAIMER / FOOTER
+========================= */
+
+.disclaimer {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 25px 20px 20px;
+
+    color: #6e6e73;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.35;
+
+    border-bottom: 1px solid #d2d2d2;
+}
+
+
+/* ORDERED LIST */
+
+.disclaimer ol {
+    padding-left: 25px;
+
+    margin-bottom: 15px;
+}
+
+.disclaimer li {
+    padding-left: 3px;
+
+    margin-bottom: 10px;
+}
+
+
+/* PARAGRAPHS */
+
+.disclaimer p {
+    margin-bottom: 12px;
+}
+
+
+/* LINKS */
+
+.disclaimer a {
+    color: #555;
+
+    text-decoration: underline;
+}
+
+.disclaimer a:hover {
+    color: #000;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .disclaimer {
+        padding: 20px 15px;
+
+        font-size: 11px;
+
+        line-height: 1.4;
+    }
+
+    .disclaimer ol {
+        padding-left: 20px;
+    }
+}
+
+
+/* =========================
+   APPLE FOOTER
+========================= */
+
+.apple-footer {
+    width: 100%;
+    background: #f5f5f7;
+
+    border-top: 1px solid #d2d2d2;
+
+    padding: 20px 17px 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* FOOTER COLUMNS */
+
+.footer-columns {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.05fr
+        1.05fr
+        1.05fr
+        1.05fr
+        1.1fr;
+
+    column-gap: 45px;
+}
+
+
+/* EACH COLUMN */
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* HEADINGS */
+
+.footer-column h3 {
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #1d1d1f;
+
+    margin-bottom: 10px;
+}
+
+
+/* LINKS */
+
+.footer-column a {
+    font-size: 12px;
+
+    color: #6e6e73;
+
+    text-decoration: none;
+
+    line-height: 1.8;
+
+    width: fit-content;
+}
+
+
+/* HOVER */
+
+.footer-column a:hover {
+    text-decoration: underline;
+
+    color: #1d1d1f;
+}
+
+
+/* SPACE BEFORE NEW HEADING */
+
+.footer-heading {
+    margin-top: 24px !important;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .footer-columns {
+        grid-template-columns: repeat(3, 1fr);
+
+        row-gap: 30px;
+
+        column-gap: 25px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr);
+
+        row-gap: 30px;
+    }
+
+    .apple-footer {
+        padding: 20px 15px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .footer-columns {
+        grid-template-columns: 1fr;
+    }
+}
